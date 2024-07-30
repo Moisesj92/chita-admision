@@ -1,0 +1,17 @@
+<%= form_with(model: innn) do |form| %>
+  <% if innn.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(innn.errors.count, "error") %> prohibited this innn from being saved:</h2>
+
+      <ul>
+        <% innn.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

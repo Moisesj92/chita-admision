@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Innns</h1>
+
+<div id="innns">
+  <% @innns.each do |innn| %>
+    <%= render innn %>
+    <p>
+      <%= link_to "Show this innn", innn %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New innn", new_innn_path %>

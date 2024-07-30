@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @innn %>
+
+<div>
+  <%= link_to "Edit this innn", edit_innn_path(@innn) %> |
+  <%= link_to "Back to innns", innns_path %>
+
+  <%= button_to "Destroy this innn", @innn, method: :delete %>
+</div>

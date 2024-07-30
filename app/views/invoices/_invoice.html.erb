@@ -1,0 +1,27 @@
+<div id="<%= dom_id invoice %>">
+  <p>
+    <strong>Rut Emisor:</strong>
+    <%= invoice.owner_identification %>
+  </p>
+
+  <p>
+    <strong>Rut Receptor:</strong>
+    <%= invoice.recipient_identification %>
+  </p>
+
+  <p>
+    <strong>Monto:</strong>
+    <%= invoice.amount %>
+  </p>
+
+  <p>
+    <strong>Folio:</strong>
+    <%= invoice.invoice_identification %>
+  </p>
+
+  <p>
+    <strong>Fecha de vencimiento:</strong>
+    <%= invoice.due_date %>
+  </p>
+
+</div>
