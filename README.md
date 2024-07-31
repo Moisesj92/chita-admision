@@ -10,8 +10,8 @@ This is a simple project to chita admission.
 
 * Use Docker to run the project with the following command: `docker compose up -d`
 
-* Run db migrations
+* setup db with the following command: `rails db:setup`
 
-* Access the project at http://localhost:3000
+* Access the project at http://localhost:3000/invoices
 
 
