@@ -14,4 +14,8 @@ This is a simple project to chita admission.
 
 * Access the project at http://localhost:3000/invoices
 
+* Create a new invoice
+
+* Quote de new invoice
+
 
