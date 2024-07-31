@@ -23,5 +23,21 @@
     <strong>Fecha de vencimiento:</strong>
     <%= invoice.due_date %>
   </p>
+  <hr>
+</div>
 
+<div>
+  <% invoice.quotations.each do |quotation| %>
+    <p>
+      <strong>Tasa de negocio:</strong> <%= quotation.document_rate %> |
+      <strong>Comision:</strong> <%= quotation.commision %> |
+      <strong>Porcentaje de anticipo:</strong> <%= quotation.advance_percentage %>
+    </p>
+    <p>
+      <strong>Costo de financiamiento:</strong> <%= quotation.financing_expense %> |
+      <strong>Giro a recibir:</strong> <%= quotation.get_amount %> |
+      <strong>Excedentes:</strong> <%= quotation.excess %> 
+    </p>
+    <hr>
+  <% end %>
 </div>

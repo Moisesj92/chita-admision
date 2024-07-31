@@ -10,5 +10,7 @@ Rails.application.routes.draw do
 
   # root "invoices/quoter#index"
 
-  resources :invoices
+  resources :invoices do
+    resources :quotations, only: [:create]
+  end
 end
